@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 export default function mouse() {
+    //React Hooks
     const [x, altX] = useState(0)
 
     const [y, altY] = useState(0)
