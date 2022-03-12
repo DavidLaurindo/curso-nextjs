@@ -4,7 +4,7 @@ import { mega } from "../../functions/mega"
 
 export default function megasena() {
     const [quant, setQuant] = useState(6)
-    const [numeros, setNumeros] = useState(mega(quant))
+    const [numeros, setNumeros] = useState([])
 
     function renderNumeros() {
         return numeros.map(numero => <NumeroDisplay key={numero} numero={numero} />)
