@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function questao() {
     const [questao, setQuestao] = useState(null)
@@ -9,15 +9,15 @@ export default function questao() {
             .then(setQuestao)
     }, [])
 
-function renderizarRespostas(){
-    if(questao){
-        return questao.respostas.map((resp, i) => {
-            return <li key={i}>{resp}</li>
-        })
-    }else{
-        return false
+    function renderizarRespostas() {
+        if (questao) {
+            return questao.respostas.map((resp, i) => {
+                return <li key={i}>{resp}</li>
+            })
+        } else {
+            return false
+        }
     }
-}
 
     return (
         <div>
