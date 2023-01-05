@@ -1,3 +1,5 @@
+//.tsx para manter o padrão dos components
+
 import styles from "../styles/Presente.module.css"
 
 export default function Presente(){
