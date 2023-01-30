@@ -6,12 +6,14 @@ export async function getStaticProps(){
 
     return{
         props: {
-            produtos: produtos
+            produtos
         }
     }
 }
 
 export default function Estatico4(props){
+    console.log('[Cliente] renderizando o componente...!')
+
     function renderizarProdutos(){
         return props.produtos.map(produto => {
             return <li key={produto.id}>{produto.nome} tem preço de R${produto.preco}</li>
